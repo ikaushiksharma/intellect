@@ -1,5 +1,5 @@
 {
-  "name": "notion-clone",
+  "name": "intellect-notes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,7 +19,7 @@
     "clsx": "^2.0.0",
     "convex": "^1.5.1",
     "lucide-react": "^0.284.0",
-    "next": "13.5.4",
+    "next": "^14.0.0",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
