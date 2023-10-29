@@ -1,5 +1,6 @@
 "use client";
 
+import { Skeleton } from "@/components/ui/skeleton";
 import { useEdgeStore } from "@/lib/edgestore";
 import { useMutation } from "convex/react";
 import { ImageIcon, X } from "lucide-react";
@@ -62,4 +63,8 @@ export const Cover = ({ url, preview }: CoverImageProps) => {
       )}
     </div>
   );
+};
+
+Cover.Skeleton = function CoverSkeleton() {
+  return <Skeleton className="w-full h-[12vh]" />;
 };
