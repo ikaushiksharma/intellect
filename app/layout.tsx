@@ -1,9 +1,10 @@
 import { ConvexClientProvider } from "@/components/providers/convex-provider";
+import { ModalProvider } from "@/components/providers/modal-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import { Toaster } from "sonner";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             storageKey="intellect-theme"
           >
             <Toaster position="bottom-center" />
+            <ModalProvider />
 
             {children}
           </ThemeProvider>
